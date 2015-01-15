@@ -39,7 +39,7 @@ end
 # For respond_with default
 begin
   ActionController::Responder
-rescue LoadError
+rescue LoadError, NameError
 else
   class ActionController::Responder
     def to_docx
